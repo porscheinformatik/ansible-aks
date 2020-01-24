@@ -68,7 +68,7 @@
     address: 10.240.0.0/16
     subnet_name: "{{ name }}{{ rpfx }}"
     parameter: "vnet_subnet_id"
-  when: network_plugin is defined
+  when: network_plugin is defined and vnet_subnet_id is not defined
 
 # network plugin - azure
 
