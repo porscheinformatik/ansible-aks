@@ -3,7 +3,7 @@
 - include_tasks: resource_group.yml
 
 - name: Get current status of AKS
-  azure_rm_aks_facts:
+  azure_rm_aks_info:
     name: "{{ name }}"
     resource_group: "{{ resource_group }}"
   register: aks_facts
